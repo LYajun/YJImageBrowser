@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1FA2419436DC4EB898BA06FF /* Pods_YJImageBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJImageBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		426EDE5FB1477A891FEB23B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		426EDE5FB1477A891FEB23B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5066204403FDC65754005983 /* Pods-YJImageBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImageBrowser_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YJImageBrowser_Tests/Pods-YJImageBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5156DDB1B0D860DBCC401B5B /* Pods-YJImageBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImageBrowser_Example.release.xcconfig"; path = "Target Support Files/Pods-YJImageBrowser_Example/Pods-YJImageBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YJImageBrowser_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJImageBrowser_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,11 +60,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		67E28B1531EDD9C7EE2B519A /* YJImageBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YJImageBrowser.podspec; path = ../YJImageBrowser.podspec; sourceTree = "<group>"; };
+		67E28B1531EDD9C7EE2B519A /* YJImageBrowser.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YJImageBrowser.podspec; path = ../YJImageBrowser.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		740F00FC82ADB92CC4BFB95D /* Pods_YJImageBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YJImageBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8EB981021E7ADABFE3C0E407 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8EB981021E7ADABFE3C0E407 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AED5063DDC9D71BBCE4936C7 /* Pods-YJImageBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImageBrowser_Tests.release.xcconfig"; path = "Target Support Files/Pods-YJImageBrowser_Tests/Pods-YJImageBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B57A6E9BE522EA9DAAEA564C /* Pods-YJImageBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJImageBrowser_Example.debug.xcconfig"; path = "Target Support Files/Pods-YJImageBrowser_Example/Pods-YJImageBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				5066204403FDC65754005983 /* Pods-YJImageBrowser_Tests.debug.xcconfig */,
 				AED5063DDC9D71BBCE4936C7 /* Pods-YJImageBrowser_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +324,18 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YJImageBrowser_Example/Pods-YJImageBrowser_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/TFHpple/TFHpple.framework",
+				"${BUILT_PRODUCTS_DIR}/YJExtensions/YJExtensions.framework",
 				"${BUILT_PRODUCTS_DIR}/YJImageBrowser/YJImageBrowser.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TFHpple.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YJExtensions.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YJImageBrowser.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

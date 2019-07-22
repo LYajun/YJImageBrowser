@@ -1,0 +1,47 @@
+PODS:
+  - Masonry (1.1.0)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+  - TFHpple (2.0.0)
+  - YJExtensions (1.1.2):
+    - YJExtensions/Foundation (= 1.1.2)
+    - YJExtensions/UIKit (= 1.1.2)
+  - YJExtensions/Foundation (1.1.2):
+    - TFHpple
+  - YJExtensions/UIKit (1.1.2):
+    - YJExtensions/Foundation
+  - YJImageBrowser (1.0.0):
+    - YJImageBrowser/Const (= 1.0.0)
+    - YJImageBrowser/YJImageBrowserView (= 1.0.0)
+  - YJImageBrowser/Const (1.0.0):
+    - YJExtensions
+  - YJImageBrowser/YJImageBrowserView (1.0.0):
+    - Masonry
+    - SDWebImage
+    - YJImageBrowser/Const
+
+DEPENDENCIES:
+  - YJImageBrowser (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
+    - SDWebImage
+    - TFHpple
+    - YJExtensions
+
+EXTERNAL SOURCES:
+  YJImageBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
+  YJExtensions: edfbbc1d97c8c6e3cf22dd02739761101b819547
+  YJImageBrowser: f80e7e8d8bce7829284c9569ec5c205a9bcf26b5
+
+PODFILE CHECKSUM: f6bb1c9bd8cf16325b25fe70a7e6365345ff1a22
+
+COCOAPODS: 1.7.0.beta.3
