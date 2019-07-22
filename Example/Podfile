@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'YJImageBrowser_Example' do
+  pod 'YJImageBrowser', :path => '../'
+
+  target 'YJImageBrowser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
