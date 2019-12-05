@@ -1,6 +1,6 @@
 {
   "name": "YJImageBrowser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "图片浏览",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/LYajun/YJImageBrowser",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/LYajun/YJImageBrowser.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -31,13 +31,17 @@
       }
     },
     {
+      "name": "ProgressView",
+      "source_files": "YJImageBrowser/Classes/ProgressView/**/*"
+    },
+    {
       "name": "YJImageBrowserView",
       "source_files": "YJImageBrowser/Classes/YJImageBrowserView/**/*",
       "dependencies": {
         "YJImageBrowser/Const": [
 
         ],
-        "Masonry": [
+        "YJImageBrowser/ProgressView": [
 
         ],
         "SDWebImage": [

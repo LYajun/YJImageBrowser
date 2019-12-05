@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YJImageBrowser'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '图片浏览'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -29,11 +29,15 @@ TODO: Add long description of the pod here.
         const.source_files = 'YJImageBrowser/Classes/Const/**/*'
         const.dependency 'YJExtensions'
     end
+    
+  s.subspec 'ProgressView' do |progressView|
+      progressView.source_files = 'YJImageBrowser/Classes/ProgressView/**/*'
+  end
 
  s.subspec 'YJImageBrowserView' do |imageBrowserView|
         imageBrowserView.source_files = 'YJImageBrowser/Classes/YJImageBrowserView/**/*'
         imageBrowserView.dependency 'YJImageBrowser/Const'
-        imageBrowserView.dependency 'Masonry'
+        imageBrowserView.dependency 'YJImageBrowser/ProgressView'
         imageBrowserView.dependency 'SDWebImage'
     end
  
