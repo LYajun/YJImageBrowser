@@ -1,23 +1,28 @@
 PODS:
-  - SDWebImage (5.0.6):
-    - SDWebImage/Core (= 5.0.6)
-  - SDWebImage/Core (5.0.6)
-  - TFHpple (2.0.0)
-  - YJExtensions (1.1.2):
-    - YJExtensions/Foundation (= 1.1.2)
-    - YJExtensions/UIKit (= 1.1.2)
-  - YJExtensions/Foundation (1.1.2):
-    - TFHpple
-  - YJExtensions/UIKit (1.1.2):
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - YJExtensions (1.2.8):
+    - YJExtensions/Foundation (= 1.2.8)
+    - YJExtensions/UIKit (= 1.2.8)
+    - YJExtensions/YJEGumbo (= 1.2.8)
+    - YJExtensions/YJEHpple (= 1.2.8)
+  - YJExtensions/Foundation (1.2.8):
+    - YJExtensions/YJEHpple
+  - YJExtensions/UIKit (1.2.8):
     - YJExtensions/Foundation
-  - YJImageBrowser (1.0.1):
-    - YJImageBrowser/Const (= 1.0.1)
-    - YJImageBrowser/ProgressView (= 1.0.1)
-    - YJImageBrowser/YJImageBrowserView (= 1.0.1)
-  - YJImageBrowser/Const (1.0.1):
+  - YJExtensions/YJEGumbo (1.2.8):
+    - YJExtensions/YJEGumbo/src (= 1.2.8)
+  - YJExtensions/YJEGumbo/src (1.2.8)
+  - YJExtensions/YJEHpple (1.2.8)
+  - YJImageBrowser (1.0.2):
+    - YJImageBrowser/Const (= 1.0.2)
+    - YJImageBrowser/ProgressView (= 1.0.2)
+    - YJImageBrowser/YJImageBrowserView (= 1.0.2)
+  - YJImageBrowser/Const (1.0.2):
     - YJExtensions
-  - YJImageBrowser/ProgressView (1.0.1)
-  - YJImageBrowser/YJImageBrowserView (1.0.1):
+  - YJImageBrowser/ProgressView (1.0.2)
+  - YJImageBrowser/YJImageBrowserView (1.0.2):
     - SDWebImage
     - YJImageBrowser/Const
     - YJImageBrowser/ProgressView
@@ -26,9 +31,8 @@ DEPENDENCIES:
   - YJImageBrowser (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - SDWebImage
-    - TFHpple
     - YJExtensions
 
 EXTERNAL SOURCES:
@@ -36,11 +40,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
-  TFHpple: a916fe0799eb30aa29b2670d14d5868cdd3a5b81
-  YJExtensions: edfbbc1d97c8c6e3cf22dd02739761101b819547
-  YJImageBrowser: d879399f8ee957f79333b957c64f5d8258b32277
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  YJExtensions: f38d0c8b05ea3cd52bde07bdd35bb913065abbc8
+  YJImageBrowser: 4e7832362366afd752f70be0372927ff9359ef02
 
 PODFILE CHECKSUM: f6bb1c9bd8cf16325b25fe70a7e6365345ff1a22
 
-COCOAPODS: 1.7.0.beta.3
+COCOAPODS: 1.9.2
